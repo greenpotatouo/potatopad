@@ -10,12 +10,14 @@ const inputTextArea = document.querySelector("#input")
 
 // NOTES
 const queueBtn = document.querySelector("#queue-btn")
+const archiveBtn = document.querySelector("#archive-btn")
 const noteList = document.querySelector("#note-list")
 
 // COUNTERS
 const pinCounterElement = document.querySelector("#pin-count")
 const noteCounterElement = document.querySelector("#note-count")
 const queueCounterElement = document.querySelector("#queue-count")
+const archiveCounterElement = document.querySelector("#archive-count")
 
 // FOOTER
 const tips = document.querySelector('#tips');
@@ -178,12 +180,14 @@ async function loadCounters() {
     noteCounterElement.textContent = noteCount
     pinCounterElement.textContent = 0;
     queueCounterElement.textContent = 0;
+    archiveCounterElement.textContent = 0;
 }
 
 function updateCounters() {
     noteCounterElement.textContent = noteCount
     pinCounterElement.textContent = 0;
     queueCounterElement.textContent = 0;
+    archiveCounterElement.textContent = 0;
 }
 
 function localJsonAddNote(newNote, noteId) {
@@ -192,6 +196,7 @@ function localJsonAddNote(newNote, noteId) {
         "text": newNote,
         "pinned": false,
         "queued": false,
+        "archived": false,
         "index": noteCount,
         "pinned_index": 0,
         "queued_index": 0,
@@ -273,6 +278,13 @@ queueBtn.addEventListener('click', () => {
     }
 })
 
+archiveBtn.addEventListener('click', () => {
+    archiveBtn.classList.toggle('active')
+    if (archiveBtn.classList.contains('active')) {
+
+    }
+})
+
 // -------------------------------- KEY PRESSING
 document.addEventListener('keydown', (event) => {
     // if (event.key == 'Tab') {
@@ -299,13 +311,19 @@ document.addEventListener('keydown', (event) => {
         case 'ArrowRight':
             event.preventDefault();
             if(event.repeat) break;
-            pageRightBtn.classList.add('active')
-            pageRightBtn.click()
-            break
+            pageRightBtn.classList.add('active');
+            pageRightBtn.click();
+            break;
         case 'q':
             if(!event.altKey) break;
             event.preventDefault();
             queueBtn.click();
+            break;
+        case 'a':
+            if(!event.altKey) break;
+            event.preventDefault();
+            archiveBtn.click();
+            break;
     }
     if(!event.ctrlKey) return;
     switch (event.key) {

@@ -43,7 +43,11 @@
             <div id="notes" class="box green">
                 <div inert class="box-border green"></div>
                 
-                <span class="box-title">notes [<span id="note-count"></span>] │ <button id="queue-btn" class="queue-btn">queued [<span id="queue-count"></span>]</button></span>
+                <span class="box-title">
+                    notes [<span id="note-count"></span>] │ 
+                    <button id="queue-btn" class="queue-btn">queued [<span id="queue-count"></span>]</button> │ 
+                    <button id="archive-btn" class="archive-btn">archived [<span id="archive-count"></span>]</button>
+                </span>
                 <div tabindex="-1" id="note-list" class="vertical-scroll">
                 </div>
             </div>
@@ -59,7 +63,7 @@
 
             <!-- FOOTER -->
             <div id="footer">
-                <p id="tips">↵ Open console │ ←/→ Nav │ ctrl+q Toggle queue </p>
+                <p id="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p>
                 <p id="status">Status: <span id="status-message"></span></p>
             </div>
             
