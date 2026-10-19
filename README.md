@@ -1,3 +1,6 @@
+# Introduction
+![Dancing BAMF Cat](public\assets\bamf.gif)
+
 # Pre-requisite Setup
 
 1. `npm init -y`
