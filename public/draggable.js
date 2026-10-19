@@ -9,7 +9,7 @@ draggable.addEventListener('mousedown', (event) => {
   
   cursorOffsetInDraggableX = event.clientX - draggable.getBoundingClientRect().left;
   cursorOffsetInDraggableY = event.clientY - draggable.getBoundingClientRect().top;
-  draggable.style.opacity = '0.8';
+  draggable.style.opacity = '0.5';
 });
 
 document.addEventListener('mousemove', (event) => {
