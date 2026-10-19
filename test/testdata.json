@@ -1,0 +1,172 @@
+{
+  "queue_count": 0,
+  "pin_count": 0,
+  "note_count": 0,
+  "notes": [
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-6f67f28"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-w9ujrvt"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-cwoizoe"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-1cz6xdd"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-kkshb1s"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-ogdm158"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-ebn3kyn"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-mm8d98f"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-3xn6blf"
+    },
+    {
+      "text": "separate 12V supply dedicated to each min 2A capability per supply",
+      "pinned": false,
+      "queued": false,
+      "id": "mvfqyl8j-whvauxr"
+    },
+    {
+      "text": "testing123 ",
+      "pinned": false,
+      "queued": false,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "id": "mvfqyl8j-m2z3a6k"
+    },
+    {
+      "text": "heyheyhey\nmultilinebullshit\n\noop there's a space too\n-123123 + 123=3213",
+      "pinned": false,
+      "queued": false,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "id": "mvfqyl8j-n3yrpzb"
+    },
+    {
+      "text": "ok lets try this again, will it save the datetime?",
+      "pinned": false,
+      "queued": false,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261017_1417",
+      "id": "mvfqyl8j-4605p4f"
+    },
+    {
+      "text": "yes!!!!!",
+      "pinned": false,
+      "queued": false,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261017_1417",
+      "id": "mvfqyl8j-m7qd0hq"
+    },
+    {
+      "id": "mvfr6cab-6w1ih7g",
+      "text": "hello",
+      "pinned": false,
+      "queued": false,
+      "index": 45,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1715"
+    },
+    {
+      "id": "mvfr6o9c-04tzdpq",
+      "text": "meep mop",
+      "pinned": false,
+      "queued": false,
+      "index": 46,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1715"
+    },
+    {
+      "id": "mvfr7ya0-gd3ktdh",
+      "text": "hi",
+      "pinned": false,
+      "queued": false,
+      "index": 47,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1716"
+    },
+    {
+      "id": "mvfr8gay-k5zrzo8",
+      "text": "yeet",
+      "pinned": false,
+      "queued": false,
+      "index": 48,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1716"
+    },
+    {
+      "id": "mvfra850-much1vf",
+      "text": "a]",
+      "pinned": false,
+      "queued": false,
+      "index": 49,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1718"
+    },
+    {
+      "id": "mvfra9gj-yznqod1",
+      "text": "asdsad",
+      "pinned": false,
+      "queued": false,
+      "index": 50,
+      "pinned_index": 0,
+      "queued_index": 0,
+      "md_file": "",
+      "datetime": "261019_1718"
+    }
+  ],
+  "schedule": []
+}

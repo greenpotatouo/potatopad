@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotatoPad Prototype</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="draggable.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- TEMPLATES -->
+    <template id="note-template">
+        <div class="note-wrapper" data-note-id="00">
+            <button class="note-index">[<span></span>]: </button>
+            <p class="note truncate-multiline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, maiores facilis doloribus eum aperiam illum reprehenderit culpa tempore! Quidem architecto eum dolor repellendus perspiciatis cupiditate voluptates amet ipsa sint exercitationem?</p>
+        </div>
+    </template>
+    <!-- FOR FUN -->
+    <img id="cat" class="draggable" draggable=false src="assets/bamf.gif" alt="">
+    <img id="catbench" src="assets/catchill.png" alt="">
+
+    <!-- APP -->
+    <div id="card" class="gradient-border">
+        <div id="container">
+            <!-- NAV -->
+            <div id="nav" class="">
+                <span id="page-name">Notepad</span>
+                <button id="page-left" class="btn nav-btn">←</button>
+                <button id="page-right" class="btn nav-btn">→</button>
+            </div>
+
+            <!-- PINNED WINDOW -->
+            <div id="pinned" class="box orange">
+                <div class="box-border orange"></div>
+                
+                <span class="box-title">pinned [<span id="pin-count"></span>]</span>
+
+            </div>
+
+            <!-- NOTES WINDOW -->
+            <div id="notes" class="box green">
+                <div inert class="box-border green"></div>
+                
+                <span class="box-title">notes [<span id="note-count"></span>] │ <button id="queue-btn" class="queue-btn">queued [<span id="queue-count"></span>]</button></span>
+                <div tabindex="-1" id="note-list" class="vertical-scroll">
+                </div>
+            </div>
+
+            <!-- CONSOLE -->
+            <div id="console" class="box purple">
+                <div class="box-double purple"></div>
+                
+                <span class="box-title">console [>_]</span>
+                <br>
+                <textarea id="input" class="console" rows="1"></textarea>
+            </div>
+
+            <!-- FOOTER -->
+            <div id="footer">
+                <p id="tips">↵ Open console │ ←/→ Nav │ ctrl+q Toggle queue </p>
+                <p id="status">Status: <span id="status-message"></span></p>
+            </div>
+            
+        </div>
+        
+
+    </div>
+</div>
+</body>
+</html>
