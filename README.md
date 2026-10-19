@@ -1,5 +1,5 @@
 # Introduction
-![Dancing BAMF Cat](public\assets\bamf.gif)
+![Dancing BAMF Cat](public/assets/bamf.gif)
 
 # Pre-requisite Setup
 
