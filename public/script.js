@@ -1,12 +1,12 @@
 // ---------------- DEFINITION OF ELEMENTS USED
 
-const container = document.querySelector('#container')
+const notepad = document.querySelector('#notepad')
 // NAV
 const pageLeftBtn = document.querySelector('#page-left')
 const pageRightBtn = document.querySelector('#page-right')
 
 // CONSOLE 
-const inputTextArea = document.querySelector("#input")
+const inputTextArea = document.querySelector("#console-input")
 
 // NOTES
 const queueBtn = document.querySelector("#queue-btn")
@@ -213,7 +213,7 @@ function submitConsoleInput() {
     }
     addNote(inputTextArea.value)
     inputTextArea.value = ''
-    container.style.setProperty('--offset', '0em')
+    notepad.style.setProperty('--offset', '0em')
 }
 
 function selectAllNotesOnly(event) {
@@ -246,10 +246,10 @@ function updatePage(pageN) {
 
 inputTextArea.addEventListener('input', (event) => {
     totalConsoleLines = inputTextArea.value.split('\n').length
-    container.style.setProperty('--offset', '0em')
+    notepad.style.setProperty('--offset', '0em')
     if(totalConsoleLines <= 3) return
     offsetConsoleUp = totalConsoleLines - 3
-    container.style.setProperty('--offset', `${offsetConsoleUp}em`)
+    notepad.style.setProperty('--offset', `${offsetConsoleUp}em`)
 })
 
 //--------------------------------EVENT LISTENERS

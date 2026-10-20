@@ -6,6 +6,8 @@
     <title>PotatoPad Prototype</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timebox.css">
+    <link rel="stylesheet" href="notepad.css">
     <script defer src="draggable.js"></script>
     <script defer src="script.js"></script>
 </head>
@@ -23,13 +25,15 @@
 
     <!-- APP -->
     <div id="card" class="gradient-border">
-        <div id="container">
-            <!-- NAV -->
-            <div id="nav" class="">
-                <span id="page-name">Notepad</span>
-                <button id="page-left" class="btn nav-btn">←</button>
-                <button id="page-right" class="btn nav-btn">→</button>
-            </div>
+        <!-- NAV -->
+        <div id="nav" class="">
+            <span id="page-name">Notepad</span>
+            <button id="page-left" class="btn nav-btn">←</button>
+            <button id="page-right" class="btn nav-btn">→</button>
+        </div>
+
+        <div id="notepad" class="page">
+            
 
             <!-- PINNED WINDOW -->
             <div id="pinned" class="box orange">
@@ -58,15 +62,15 @@
                 
                 <span class="box-title">console [>_]</span>
                 <br>
-                <textarea id="input" class="console" rows="1"></textarea>
-            </div>
-
-            <!-- FOOTER -->
-            <div id="footer">
-                <p id="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p>
-                <p id="status">Status: <span id="status-message"></span></p>
+                <textarea id="console-input" rows="1"></textarea>
             </div>
             
+        </div>
+        <!-- FOOTER -->
+        <div id="footer">
+            <hr class="flair"></hr>
+            <p id="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p>
+            <p id="status">Status: <span id="status-message"></span></p>
         </div>
         
 
