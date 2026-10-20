@@ -123,6 +123,7 @@ async function loadNotes() {
         noteIdx = noteIdxBtn.querySelector("span")
         noteIdx.textContent = idx.toString().padStart(2, '0')
         noteList.appendChild(wrapper)
+        note.index = idx;
         idx++
     }
     await loadCounters()
@@ -197,7 +198,7 @@ function localJsonAddNote(newNote, noteId) {
         "pinned": false,
         "queued": false,
         "archived": false,
-        "index": noteCount,
+        "index": noteCount-1,
         "pinned_index": 0,
         "queued_index": 0,
         "md_file": "",
