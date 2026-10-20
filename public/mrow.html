@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotatoPad Prototype</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mrow.css">
+    <script defer src="draggable.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- TEMPLATES -->
+    <template id="note-template">
+        <div class="note-wrapper" data-note-id="00">
+            <button class="note-index">[<span></span>]: </button>
+            <p class="note truncate-multiline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, maiores facilis doloribus eum aperiam illum reprehenderit culpa tempore! Quidem architecto eum dolor repellendus perspiciatis cupiditate voluptates amet ipsa sint exercitationem?</p>
+        </div>
+    </template>
+    <!-- FOR FUN -->
+    <img id="cat" class="draggable" draggable=false src="assets/bamf.gif" alt="">
+    <img id="catbench" src="assets/catchill.png" alt="">
+
+    <!-- APP -->
+    <div id="card" class="gradient-border">
+        <!-- NAV -->
+        <div id="nav" class="">
+            <span id="page-title">bamf</span>
+            <button id="page-left" class="btn nav-btn">←</button>
+            <button id="page-right" class="btn nav-btn">→</button>
+        </div>
+        <div id="mrow" class="page active">
+            <div id="mrow-view" class="box purple">
+                <div inert class="box-border purple"></div>
+                
+                <span class="box-title">mrow =^. .^=</span>
+
+            </div>
+
+        </div>
+        
+        <!-- FOOTER -->
+        <div id="footer">
+            <hr class="flair"></hr>
+            <!-- <p id="tips-timebox" class="tips active">↵ Open braindump │ ←/→ Nav │ alt+s Expand schedule </p>
+            <p id="tips-notepad" class="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p> -->
+            <!-- <p id="status">Status: <span id="status-message"></span></p> -->
+        </div>
+        
+
+    </div>
+</div>
+</body>
+</html>
