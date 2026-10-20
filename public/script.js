@@ -1,6 +1,22 @@
 // ---------------- DEFINITION OF ELEMENTS USED
 
 const notepad = document.querySelector('#notepad')
+const timebox = document.querySelector("#timebox")
+
+const pages = [
+    {
+        "id": "timebox",
+        "title": "TIME:bOX",
+        "object": timebox
+    },
+    {
+        "id": "notepad",
+        "title": "Notepad =^o 3 o^=",
+        "object": notepad
+    }
+]
+
+const DEBUG = true;
 // NAV
 const pageLeftBtn = document.querySelector('#page-left')
 const pageRightBtn = document.querySelector('#page-right')
@@ -20,7 +36,6 @@ const queueCounterElement = document.querySelector("#queue-count")
 const archiveCounterElement = document.querySelector("#archive-count")
 
 // FOOTER
-const tips = document.querySelector('#tips');
 const status = document.querySelector('#status-message');
 
 // TEMPLATES
@@ -419,3 +434,26 @@ async function main() {
 }
 
 main()
+
+// ------------------------- DEBUG SHIT
+function whichPageIsActive() {
+    for(p of pages) {
+        console.log(p.object)
+        if(p.object.matches(".active")) {
+            return p
+        }
+    }
+}
+
+function updatePageTitleToActive() {
+    pageTitleElement = document.querySelector("#page-title")
+    activePage = whichPageIsActive();
+    pageTitleElement.textContent = activePage["title"];
+}
+
+function debug() {
+    if (!DEBUG) return;
+    updatePageTitleToActive();
+    console.log("DEBUG")
+}
+debug()

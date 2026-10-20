@@ -54,6 +54,8 @@ html, body {
     position: absolute;
     z-index: 999;
     height: 8em;
+    top: 10%;
+    left: 35%;
 }
 
 #catbench {
@@ -127,7 +129,7 @@ html, body {
     height: var(--nav-height);
 }
 
-#page-name {
+#page-title {
     margin: 0 1ch;
 }
 
@@ -165,7 +167,11 @@ html, body {
 * 
 */
 
-.page { 
+.page {
+    display: none;
+}
+
+.page.active { 
     --page-height: calc(100% - var(--nav-height) - var(--footer-height)); /* 100% relative to parent div*/
     height: var(--page-height);
 
@@ -201,7 +207,12 @@ html, body {
     width: 6%;
 }
 
-#tips {
+.tips {
+    display: none;
+}
+
+.tips.active {
+    display: block;
     margin: 0;
     color: var(--text-blue);
     height: 1em;

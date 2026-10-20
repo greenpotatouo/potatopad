@@ -27,7 +27,7 @@
     <div id="card" class="gradient-border">
         <!-- NAV -->
         <div id="nav" class="">
-            <span id="page-name">Notepad</span>
+            <span id="page-title">Notepad</span>
             <button id="page-left" class="btn nav-btn">←</button>
             <button id="page-right" class="btn nav-btn">→</button>
         </div>
@@ -36,15 +36,15 @@
             
 
             <!-- PINNED WINDOW -->
-            <div id="pinned" class="box orange">
-                <div class="box-border orange"></div>
+            <div id="pinned-view" class="box orange">
+                <div inert class="box-border orange"></div>
                 
                 <span class="box-title">pinned [<span id="pin-count"></span>]</span>
 
             </div>
 
             <!-- NOTES WINDOW -->
-            <div id="notes" class="box green">
+            <div id="notes-view" class="box green">
                 <div inert class="box-border green"></div>
                 
                 <span class="box-title">
@@ -57,8 +57,8 @@
             </div>
 
             <!-- CONSOLE -->
-            <div id="console" class="box purple">
-                <div class="box-double purple"></div>
+            <div id="console-view" class="box purple">
+                <div inert class="box-double purple"></div>
                 
                 <span class="box-title">console [>_]</span>
                 <br>
@@ -66,10 +66,81 @@
             </div>
             
         </div>
+        <div id="timebox" class="page active">
+            <div id="schedule-view" class="box purple">
+                <div inert class="box-border purple"></div>
+                
+                <span class="box-title">schedule / 
+                    <button id="reposition-schedule">10<span id="delimeter">:</span>30</button> / 
+                        Mon Oct 19 2026 / </span>
+
+            </div>
+            <div id="top3-view" class="box orange">
+                <div inert class="box-border orange"></div>
+                
+                <span class="box-title">top 3 [ ] [ ] [ ] </span>
+                <div id="top3">
+                    <div class="top3-item">
+                        <div class="top3-index">
+                            1.
+                        </div>
+                        <div class="top3-content" contenteditable="true" spellcheck="false" data-max-lines="3"></div>
+                    </div>
+                    <div class="top3-item">
+                        <div class="top3-index">
+                            2.
+                        </div>
+                        <div class="top3-content" contenteditable="true" spellcheck="false" data-max-lines="3"></div>
+                    </div>
+                    <div class="top3-item">
+                        <div class="top3-index">
+                            3.
+                        </div>
+                        <div class="top3-content" contenteditable="true" spellcheck="false" data-max-lines="3"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="top3-history-view" class="box brown">
+                <div inert class="box-border brown"></div>
+                
+                <span class="box-title">top 3 history </span>
+                <!-- red == no entry, grey == incomplete, green = complete -->
+                <div id="top3-history">
+
+                    <div class="top3-history-entry" data-history-index="0">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                    <div class="top3-history-entry" data-history-index="1">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                    <div class="top3-history-entry" data-history-index="2">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                    <div class="top3-history-entry" data-history-index="3">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                    <div class="top3-history-entry" data-history-index="4">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                    <div class="top3-history-entry" data-history-index="5">
+                        [<span data-index="0">x</span><span data-index="1">x</span><span data-index="2">x</span>]
+                    </div>
+                </div>
+            </div>
+            <div id="braindump-view" class="box light">
+                <div inert class="box-border light"></div>
+                
+                <span class="box-title">braindump</span>
+                <br>
+                <textarea id="braindump"></textarea>
+
+            </div>
+        </div>
         <!-- FOOTER -->
         <div id="footer">
             <hr class="flair"></hr>
-            <p id="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p>
+            <p id="tips-timebox" class="tips active">↵ Open braindump │ ←/→ Nav │ alt+s Expand schedule </p>
+            <p id="tips-notepad" class="tips">↵ Open console │ ←/→ Nav │ alt+q Toggle queue </p>
             <p id="status">Status: <span id="status-message"></span></p>
         </div>
         
